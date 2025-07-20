@@ -1,8 +1,10 @@
 import { createClient } from "@supabase/supabase-js"
 
 // Check if we're in a browser environment and if environment variables are available
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ""
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ""
+// const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || ""
+// const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ""
+const supabaseUrl = "https://iybdvzkprbgzhnlcaulg.supabase.co"
+const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml5YmR2emtwcmJnemhubGNhdWxnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEyODQwNjUsImV4cCI6MjA2Njg2MDA2NX0.2cT9e28IwI1EfmECN5SCT_va7EWg5QjfAIkRTG5s-v0"
 
 // Create a mock client for development/demo purposes when env vars are missing
 const createSupabaseClient = () => {
